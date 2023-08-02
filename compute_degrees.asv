@@ -1,0 +1,24 @@
+%Compute degree distribution
+
+function degrees, degree_distribution = compute_degrees(layout)
+    % Initialize an array to store the degrees
+    degrees = zeros(1, length(layout) + 1);
+
+    % Iterate over each node in the graph
+    for i = 1:length(layout)
+        % The degree of a node is the number of connections it has
+        degrees(i) = length(layout{i});
+    end
+
+    % Iterate over each node again to add the connections of each node to its connected nodes
+    for i = 1:length(layout)
+        for j = 1:length(layout{i})
+            degrees(layout{i}{j}) = degrees(layout{i}{j}) + 1;
+        end
+    end
+
+end
+
+
+
+
