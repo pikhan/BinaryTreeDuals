@@ -24,7 +24,7 @@ degree_counts = accumarray(degree_indices, 1);
 % Normalize the counts to get the degree distribution
 degree_distribution = degree_counts / sum(degree_counts);
 figure();
-bar(unique_degrees, degree_distribution);
+semilogy(unique_degrees, degree_distribution);
 xlabel('Degree');
 ylabel('Frequency');
 title('Degree Distribution');

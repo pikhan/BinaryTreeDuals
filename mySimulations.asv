@@ -1,8 +1,8 @@
 %simulations
 function sim = mySimulations()
 %First, let us generate a uniformly distributed random time series
-time_series = rand(1,10000); % a time series of 100 uniformly distributed random numbers
-levelSetTree = level_set_tree(time_series,[1:10000],0); %our level set tree, code from Zoe Haskell's Ph.D thesis
+time_series = rand(1,100); % a time series of 100 uniformly distributed random numbers
+levelSetTree = level_set_tree(time_series,[1:100],0); %our level set tree, code from Zoe Haskell's Ph.D thesis
 
 % Find the indices where the list has the value 0
 root_index = find(levelSetTree == 0);
@@ -27,9 +27,9 @@ disp("the mean degree");
 disp(mean_deg);
 disp("the mean deg n");
 disp(mean_deg_n);
+title('Mean Degree as a Function of N')
 figure();
 plot(mean_deg_n);
-title('Mean Degree as a Function of N')
 adj = layout_to_adj(layout);
 [dist, apl] = floyd_warshall(adj);
 disp("the apl:");
@@ -46,7 +46,6 @@ disp("the clustering coefficients:");
 disp(clustering_coefficients);
 figure();
 plot(clustering_coefficients);
-title('Clustering Coefficients in Order of Vertices');
 disp("the mean clustering coefficient");
 disp(mean_clustering_coefficient);
 sim = 1;

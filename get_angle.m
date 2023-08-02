@@ -14,10 +14,6 @@ disp("TESTER");
 disp(it);
 for i=it
     % If the node is a leaf, visit it
-    disp("TEST");
-    disp(i);
-    disp(root_id);
-    disp("TEST");
     if tree.isleaf(i)
         leaf_iterator=leaf_iterator+1;
         angles(i) = start_angle+leaf_iterator*angle_increment;
