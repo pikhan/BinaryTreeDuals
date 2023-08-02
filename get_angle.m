@@ -10,12 +10,18 @@ angle_increment = total_angle/(numel(tree.findleaves)+1);
 leaf_iterator = 0;
 
 it = traverse_left_to_right(tree,root_id);
+disp("TESTER");
+disp(it);
 for i=it
     % If the node is a leaf, visit it
+    disp("TEST");
+    disp(i);
+    disp(root_id);
+    disp("TEST");
     if tree.isleaf(i)
         leaf_iterator=leaf_iterator+1;
         angles(i) = start_angle+leaf_iterator*angle_increment;
-    elseif i==root_id || i==tree.getchildren(root_id)
+    elseif i==root_id | i==tree.getchildren(root_id)
         angles(i) = 90;
     end
 end
