@@ -1,3 +1,44 @@
 Simulation Results
-N=10,000
+N=1,000
+
 Type = Uniform Random
+the mean clustering coefficient
+    0.9827
+the apl:
+    2.7150
+the mean degree:
+   94.3473
+
+
+Type = Brownian (Gaussian)
+the mean clustering coefficient
+    0.9829
+the apl:
+    1.9644
+the mean degree
+  123.0996
+
+
+Type = Fractional Brownian Motion with Hurst Exponent 0.7
+the mean clustering coefficient
+    0.9149
+the apl:
+    3.0454
+the mean degree
+   21.5869
+
+Type = Time Series with Linear Trend
+the mean clustering coefficient
+    0.3442
+the apl:
+    2.1068
+the mean degree:
+    2.9091
+
+Type = Lorenz Attractor with sigma=10, beta=8/3,rho=28, initial conditions x0=0.1, y0=0, z0=20
+the mean clustering coefficient
+    0.9138
+the apl:
+    1.4744
+the mean degree
+    6.6154
