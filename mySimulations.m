@@ -1,8 +1,8 @@
 %simulations
 function sim = mySimulations()
 %First, let us generate a uniformly distributed random time series
-time_series = rand(1,10000); % a time series of 100 uniformly distributed random numbers
-levelSetTree = level_set_tree(time_series,[1:10000],0); %our level set tree, code from Zoe Haskell's Ph.D thesis
+time_series = rand(1,5000); % a time series of 100 uniformly distributed random numbers
+levelSetTree = level_set_tree(time_series,[1:5000],0); %our level set tree, code from Zoe Haskell's Ph.D thesis
 
 % Find the indices where the list has the value 0
 root_index = find(levelSetTree == 0);

@@ -10,8 +10,6 @@ angle_increment = total_angle/(numel(tree.findleaves)+1);
 leaf_iterator = 0;
 
 it = traverse_left_to_right(tree,root_id);
-disp("TESTER");
-disp(it);
 for i=it
     % If the node is a leaf, visit it
     if tree.isleaf(i)
