@@ -35,7 +35,7 @@ the apl:
 the mean degree:
     2.9091
 
-Type = Lorenz Attractor with sigma=10, beta=8/3,rho=28, initial conditions x0=0.1, y0=0, z0=20
+Type = Lorenz Attractor with sigma=10, beta=8/3,rho=28, initial conditions x0=0.1, y0=0, z0=
 the mean clustering coefficient
     0.9138
 the apl:
